@@ -1,6 +1,7 @@
-# Slot-aware Multi-objective Reranking via Dynamic Weighting
+# Dynamic Slot-weighted Re-ranking for Multi-objective Recommendations
 
-Slot-aware Multi-objective Reranking via Dynamic Weighting (SMR-DW) is modified on [CMR](https://github.com/lyingCS/Controllable-Multi-Objective-Reranking) 
+Dynamic Slot-weighted Re-ranking for Multi-objective
+Recommendations (DSR) is modified on [CMR](https://github.com/lyingCS/Controllable-Multi-Objective-Reranking) 
 
 ## Requirements
 
@@ -27,8 +28,6 @@ source venv/bin/activate
 #### Pull code from github
 
 ```
-git clone https://github.com/selous123/SMR-DW.git
-cd SMR-DW
 ```
 
 #### Decompress evaluator checkpoint
@@ -56,8 +55,4 @@ Model parameters can be set by using a config file, and specify its file path at
 Please cite our paper if you use this repository.
 
 ```
-@inproceedings{tao2024smrdw,
-  title={Slot-aware Multi-objective Reranking via Dynamic Weighting},
-  author={Tao Zhang, Mengting Xu and Luwei Yang}
-}
 ```

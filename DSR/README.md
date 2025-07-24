@@ -43,7 +43,7 @@ tar -xzvf ./model/save_model_ad/10/*.tar.gz -C ./model/save_model_ad/10/
 Run re-ranker
 
 ```
-python run_reranker.py --setting_path example/config/ad/slmr_generator_setting.json
+python run_reranker.py --setting_path example/config/ad/dsr_generator_setting.json
 ```
 
 Model parameters can be set by using a config file, and specify its file path at `--setting_path`, e.g., `python run_ranker.py --setting_path config`. The config files for the different models can be found in `example/config`. Moreover, model parameters can also be directly set from the command line.

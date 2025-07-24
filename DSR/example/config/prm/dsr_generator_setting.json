@@ -1,5 +1,5 @@
 {
-  "model_type": "SLMR_generator",
+  "model_type": "DSR",
   "data_set_name": "prm",
   "initial_ranker": "lambdaMART",
   "lr": 1e-4,

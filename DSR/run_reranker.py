@@ -9,7 +9,7 @@ from librerank.reranker import *
 from librerank.rl_reranker import *
 from librerank.CMR_generator import *
 from librerank.CMR_evaluator import *
-from librerank.SLMR_generator import *
+from librerank.DSR_generator import *
 import datetime
 import numpy as np
 
@@ -340,7 +340,7 @@ def train(train_file, test_file, feature_size, max_time_len, itm_spar_fnum, itm_
                 auc_train_losses_step.append(auc_loss)
                 div_train_losses_step.append(div_loss)
 
-            elif params.model_type == 'SLMR_generator':
+            elif params.model_type == 'DSR_generator':
                 train_prefer = params.acc_prefer #精准优先
                 training_attention_distribution, training_prediction_order, predictions, cate_seq, cate_chosen, prefer_vector = \
                     model.rerank(data_batch, params.keep_prob, train_prefer=train_prefer)

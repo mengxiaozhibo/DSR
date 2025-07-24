@@ -1,11 +1,11 @@
 from librerank.rl_reranker import *
 
-class SLMR_generator(RLModel):
+class DSR(RLModel):
 
     def __init__(self, feature_size, eb_dim, hidden_size, max_time_len, itm_spar_num, itm_dens_num,
                  profile_num, max_norm=None, sample_val=0.2, gamma=0.01,
                  rep_num=1, loss_type='ce'):
-        super(SLMR_generator, self).__init__(feature_size, eb_dim, hidden_size, max_time_len, itm_spar_num, itm_dens_num,
+        super(DSR, self).__init__(feature_size, eb_dim, hidden_size, max_time_len, itm_spar_num, itm_dens_num,
                                       profile_num, max_norm, sample_val, gamma, rep_num, loss_type)
 
     def build_ft_chosen(self, data_batch, chosen):

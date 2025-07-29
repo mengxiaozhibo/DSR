@@ -18,8 +18,6 @@ except FileNotFoundError:
 setup(
     name="librerank",
     version="0.1.0",
-    author="Yunjia Xi & Weiwen Liu",
-    author_email="yunjiaxi404@gmail.com & liuweiwen1995@gmail.com",
     description=(DESCRIPTION),
     license="MIT",
     keywords="TODO",
